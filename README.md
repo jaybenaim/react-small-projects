@@ -1,4 +1,4 @@
-# Small Coding Challenge Projects Readme
+# Coding Challenge Projects
 
 Welcome to my small coding challenge projects! These projects were created to practice and showcase some skills. Below you'll find information about each project, how to access them live, and what you can learn from them.
 
