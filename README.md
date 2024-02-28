@@ -1,36 +1,69 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Small Coding Challenge Projects Readme
 
-## Getting Started
+Welcome to my small coding challenge projects! These projects were created to practice and showcase some skills. Below you'll find information about each project, how to access them live, and what you can learn from them.
 
-First, run the development server:
+## Live Demo
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+You can access the live demo of these projects [here](https://react-small-projects-sable.vercel.app/).
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Projects Overview
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Day Percentage
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+**Description:**
 
-## Learn More
+Day Percentage is a simple tool where you can enter a time and see how much of the day has passed in percentage.
 
-To learn more about Next.js, take a look at the following resources:
+**Features:**
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Enter a specific time.
+- See the percentage of the day that has passed until that time.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+**Technologies Used:**
 
-## Deploy on Vercel
+- React.js
+- TypeScript
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+**Skills Practiced:**
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- React state management
+- Handling user input
+- basic calculations
+
+### Tic-Tac-Toe
+
+**Description:**
+
+Tic-Tac-Toe is a classic game where two players take turns marking spaces in a 3x3 grid. The player who succeeds in placing three of their marks in a horizontal, vertical, or diagonal row wins the game.
+
+**Features:**
+
+- Play Tic-Tac-Toe against another player
+- Restart the game at any time
+- Visual indication of winning rows
+
+**Technologies Used:**
+
+- React.js
+- TypeScript
+
+**Skills Practiced:**
+
+- React state management
+- Handling user interactions
+- Game logic implementation
+
+## How to Run Locally
+
+1. Clone the repository to your local machine.
+2. Navigate to the project directory.
+3. Install dependencies by running npm install.
+4. Start the development server by running npm start.
+
+## What I Learned
+
+Improved my React.js skills, including state management, component lifecycle, and event handling.
+Learned how to implement basic game logic in a React application.
+Practiced using TypeScript for type safety and enhanced code readability.
+
+Thank you for checking out my projects! 🚀

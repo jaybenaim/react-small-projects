@@ -2,7 +2,10 @@
 import { useState } from "react";
 import cx from "classnames";
 
-type Move = "X" | "O" | "";
+enum Move {
+  X = "X",
+  O = "O",
+}
 
 const GameBoard = () => {
   const cols = Array.from({ length: 9 }, (_, index) => index);
@@ -10,18 +13,18 @@ const GameBoard = () => {
   const [winningRow, setWinningRow] = useState<number[]>([]);
 
   const initialMoves = rows.map((row) => row.map((_) => ""));
-  const [currentMove, setCurrentMove] = useState<Move>("X");
+  const [currentMove, setCurrentMove] = useState<Move>(Move.X);
   const [moves, setMoves] = useState<string[][]>(initialMoves);
 
   const handleClick = (rowIndex: number, colIndex: number) => {
     const updatedMoves: string[][] = [...moves];
     updatedMoves[rowIndex][colIndex] = currentMove;
 
-    // Set the moves
+    // Set the current moves
     setMoves(updatedMoves);
 
     // Update the current move for the next player
-    setCurrentMove((curr) => (curr === "X" ? "O" : "X"));
+    setCurrentMove((curr) => (curr === Move.X ? Move.O : Move.X));
 
     const winner = getWinner(updatedMoves);
 
@@ -78,7 +81,7 @@ const GameBoard = () => {
   };
 
   const handleRestart = () => {
-    setCurrentMove("X");
+    setCurrentMove(Move.X);
     setMoves(initialMoves);
     setWinningRow([]);
   };
